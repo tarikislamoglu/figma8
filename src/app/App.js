@@ -2,7 +2,7 @@ import React from "react";
 
 const App = () => {
   return (
-    <div className="flex justify-center items-center w-full h-screen relative">
+    <div className="flex justify-center items-center min-w-full min-h-screen relative">
       <img
         src="/Ellipse 1.svg"
         className="w-1/2 h-[60%] absolute bottom-0 left-0 hidden lg:block"
