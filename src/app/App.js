@@ -2,10 +2,18 @@ import React from "react";
 
 const App = () => {
   return (
-    <div className="flex justify-center items-center w-full h-screen">
-      <div className="h-3/5 lg:w-1/3 w-2/3 bg-[#FFFFFF0D] z-10 shadow-xl flex flex-col rounded-lg ">
+    <div className="flex justify-center items-center w-full h-screen relative">
+      <img
+        src="/Ellipse 1.svg"
+        className="w-1/2 h-[60%] absolute bottom-0 left-0 hidden lg:block"
+      />
+      <img
+        src="/Ellipse 2.svg"
+        className="w-1/2 h-[60%] absolute top-0 right-[-100px] hidden lg:block"
+      />
+      <div className="h-3/5 lg:w-1/3 md:w-2/3 w-full bg-[#FFFFFF0D] z-10 shadow-xl flex flex-col rounded-lg ">
         <form className="flex flex-col space-y-5 p-10 w-full">
-          <h3 className="font-semibold text-[50px] text-[#02B94BD6] md:w-1/2 w-full text-center md:text-start ">
+          <h3 className="font-semibold text-[50px] text-[#02B94BD6] lg:w-1/2 w-full text-center lg:text-start ">
             LOGIN
           </h3>
           <input
@@ -16,7 +24,7 @@ const App = () => {
             placeholder="Password"
             className="p-2 border-1 rounded-md  border-[#0000004F]  "
           />
-          <button className="p-2 bg-[#02B94BD6] md:w-1/2 text-[#fff] w-full rounded-[10px]">
+          <button className="p-2 bg-[#02B94BD6] lg:w-1/2 text-[#fff] w-full rounded-[10px]">
             LOGIN
           </button>
           <div className="flex items-center w-full ">
